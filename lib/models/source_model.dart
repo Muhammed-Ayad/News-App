@@ -22,4 +22,9 @@ class SourceModel {
       category: jsonData['category'] ?? '',
     );
   }
+
+  @override
+  String toString() {
+    return 'SourceModel(id: $id, name: $name, description: $description, url: $url, category: $category)';
+  }
 }

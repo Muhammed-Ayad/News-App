@@ -33,4 +33,9 @@ class NewModel {
       content: jsonData['content'] ?? '',
     );
   }
+
+  @override
+  String toString() {
+    return 'NewModel(source: $source, author: $author, title: $title, description: $description, url: $url, urlToImage: $urlToImage, publishedAt: $publishedAt, content: $content)';
+  }
 }
