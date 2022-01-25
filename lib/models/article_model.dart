@@ -1,6 +1,6 @@
-import 'package:news_app/models/source_model.dart';
+import 'source_model.dart';
 
-class NewModel {
+class ArticleModel {
   final SourceModel source;
   final String author;
   final String title;
@@ -10,7 +10,7 @@ class NewModel {
   final DateTime publishedAt;
   final String content;
 
-  NewModel({
+  ArticleModel({
     required this.source,
     required this.author,
     required this.title,
@@ -21,8 +21,8 @@ class NewModel {
     required this.content,
   });
 
-  factory NewModel.fromJson(Map<String, dynamic> jsonData) {
-    return NewModel(
+  factory ArticleModel.fromJson(Map<String, dynamic> jsonData) {
+    return ArticleModel(
       source: SourceModel.fromJson(jsonData['source'] ?? ''),
       author: jsonData['author'] ?? '',
       title: jsonData['title'] ?? '',
