@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/pages/search_page.dart';
+import 'search_page.dart';
 
 class HomePage extends StatelessWidget {
   static const id = '/homePage';
@@ -8,9 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(),
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
         elevation: 0.5,
         title: const Text(
           'NewsNow',

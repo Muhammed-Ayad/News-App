@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/models/article_model.dart';
-import 'package:news_app/services/news_services.dart';
-import 'package:news_app/ui/widgets/article_item.dart';
+import '../../models/article_model.dart';
+import '../../services/news_services.dart';
+import '../widgets/article_item.dart';
 
 class SearchPage extends StatefulWidget {
   static const id = '/searchPage';

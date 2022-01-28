@@ -10,7 +10,7 @@ class NewsServices {
   static Future<List<ArticleModel>?> getSearchArticles(
       {required String search}) async {
     Map<String, dynamic> jsonData = await API.get(
-      url: '$baseUrl/everything?q=$search&sortBy=publishedAt&apiKey=$apiKey',
+      url: '$baseUrl/everything?q=$search&apiKey=$apiKey',
     );
     List<ArticleModel> newsData = [];
     if (jsonData['status'] == 'ok') {
@@ -19,7 +19,7 @@ class NewsServices {
       for (var data in newsList) {
         newsData.add(ArticleModel.fromJson(data));
       }
-      log('getSearchArticles :${newsData.toString()}');
+      // log('getSearchArticles :${newsData.toString()}');
 
       return newsData;
     }

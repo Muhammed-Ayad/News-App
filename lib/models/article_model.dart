@@ -6,7 +6,7 @@ class ArticleModel {
   final String title;
   final String description;
   final String url;
-  final String urlToImage;
+  final String? urlToImage;
   final DateTime publishedAt;
   final String content;
 
@@ -28,7 +28,7 @@ class ArticleModel {
       title: jsonData['title'] ?? '',
       description: jsonData['description'] ?? '',
       url: jsonData['url'] ?? '',
-      urlToImage: jsonData['urlToImage'] ?? '',
+      urlToImage: jsonData['urlToImage'],
       publishedAt: DateTime.parse(jsonData['publishedAt'] ?? ''),
       content: jsonData['content'] ?? '',
     );
