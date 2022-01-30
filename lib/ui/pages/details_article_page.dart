@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/ui/widgets/cached_net_work_image_item.dart';
 import '../../models/article_model.dart';
 import '../../themes/text_styles.dart';
 import 'web_view_page.dart';
@@ -64,16 +65,12 @@ class _DetailsArticlePageState extends State<DetailsArticlePage> {
               const SizedBox(
                 height: 7,
               ),
-              Container(
-                width: double.infinity,
-                height: 180,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage(widget.article.urlToImage!),
-                  ),
-                ),
+             
+              CachNetWorkImageItem(
+                heightImageNetWork: 180,
+                heightImageError: 180,
+                widthtImageNetWork: double.infinity,
+                imageUrl: widget.article.urlToImage,
               ),
               const SizedBox(
                 height: 7,
@@ -105,8 +102,8 @@ class _DetailsArticlePageState extends State<DetailsArticlePage> {
                     style: TextStyle(color: Colors.blue, fontSize: 20),
                   ),
                   onPressed: () {
-                    MaterialPageRoute(builder: (ctx) {
-                      return  WebViewScreen(
+                    MaterialPageRoute(builder: (context) {
+                      return WebViewScreen(
                         blogUrl: widget.article.url,
                       );
                     });

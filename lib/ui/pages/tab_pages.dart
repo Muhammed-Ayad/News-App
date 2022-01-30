@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/pages/favorite_page.dart';
-import 'package:news_app/ui/pages/home_page.dart';
-import 'package:news_app/ui/pages/sections_page.dart';
+import 'favorite_page.dart';
+import 'home_page.dart';
+import 'sections_page.dart';
 
-class TapScreen extends StatefulWidget {
+class TabPages extends StatefulWidget {
   static const id = '/TapScreen';
-  const TapScreen({Key? key}) : super(key: key);
+  const TabPages({Key? key}) : super(key: key);
 
   @override
-  _TapScreenState createState() => _TapScreenState();
+  _TabPagesState createState() => _TabPagesState();
 }
 
-class _TapScreenState extends State<TapScreen> {
+class _TabPagesState extends State<TabPages> {
   final List<Map<String, Widget>> _pages = [
     {
       'page': const HomePage(),

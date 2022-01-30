@@ -61,17 +61,14 @@ class _SearchPageState extends State<SearchPage> {
                     );
                   }
                   if (snapshot.hasData) {
-                    return ListView.separated(
+                    return ListView.builder(
                       shrinkWrap: true,
                       physics: const PageScrollPhysics(),
                       itemCount: snapshot.data!.length,
                       itemBuilder: (context, index) {
                         return ArticleItem(article: snapshot.data![index]);
                       },
-                      separatorBuilder: (context, index) => const Divider(
-                        color: Colors.black,
-                        thickness: 0.4,
-                      ),
+                     
                     );
                   } else {
                     return Column(

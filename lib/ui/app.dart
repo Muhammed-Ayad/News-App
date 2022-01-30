@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/ui/pages/tap_screen.dart';
+import 'pages/tab_pages.dart';
 import 'pages/search_page.dart';
 
 import 'pages/home_page.dart';
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       
-      initialRoute: TapScreen.id,
+      initialRoute: TabPages.id,
       routes: {
         HomePage.id: (ctx) => const HomePage(),
         SearchPage.id: (ctx) =>  const SearchPage(),
-        TapScreen.id:(ctx)=>const TapScreen(),
+        TabPages.id:(ctx)=>const TabPages(),
       },
     );
   }

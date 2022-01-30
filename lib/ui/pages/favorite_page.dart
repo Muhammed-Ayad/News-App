@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:news_app/providers/favorite_notifier.dart';
-import 'package:news_app/ui/widgets/article_item.dart';
+import '../../providers/favorite_notifier.dart';
+import '../widgets/article_item.dart';
 
 class FavoritePage extends StatelessWidget {
   const FavoritePage({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class FavoritePage extends StatelessWidget {
         centerTitle: true,
         title: const Text(
           'Favorite',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.teal),
         ),
       ),
       body: Consumer(
