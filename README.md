@@ -1,8 +1,12 @@
+<div align="center">
 #  NewsNow
 
+  
+  <img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt='News-App'/>
+  
 Local and international news in various fields: Follow Egypt news, world news, art news, sports news, economy news, health news and others in one place from more than one source around the world. Breaking news around the clock
 
-
+<div align="left">
 
 Apis : https://newsapi.org/
 
@@ -21,48 +25,15 @@ Apis : https://newsapi.org/
 - [Sources](https://newsapi.org/docs/endpoints/sources)
 
   This endpoint returns the subset of news publishers that top headlines 
+<div align="center">
+<img src="assets/images/home.png" height="400" >
+<img src="assets/images/articles.png" height="400" >
+<img src="assets/images/details.png" height="400" >
+<img src="assets/images/favorite.png" height="400" >
+<img src="assets/images/search.png" height="400" >
 
 
-
-  <tr>  
-   <th>   <h2>Home Page</h2> </th>
-  <tr/>
-  <tr>
-   <th><img src="assets/images/home.png"  width="370"></th>
-  </tr>
-
-<tr>  
-   <th>   <h2>Articles Page</h2> </th>
-  <tr/>
-  <tr>
-   <th><img src="assets/images/articles.png"  width="370"></th>
-  </tr>
-
-<tr>  
-   <th>   <h2>Details Page</h2> </th>
-  <tr/>
-  <tr>
-   <th><img src="assets/images/details.png"  width="370"></th>
-  </tr>
-
-<tr>  
-   <th>   <h2>Favorite Page</h2> </th>
-  <tr/>
-  <tr>
-   <th><img src="assets/images/favorite.png"  width="370"></th>
-  </tr>
-
-<tr>  
-   <th>   <h2>Search Page</h2> </th>
-  <tr/>
-  <tr>
-   <th><img src="assets/images/search.png"  width="370"></th>
-  </tr>
-
-</table>
-
-
-
+<div align="left">
 # Package
 
 ## cached_network_image:  A flutter library to show images from the internet and keep them in the cache directory.
