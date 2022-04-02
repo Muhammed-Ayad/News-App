@@ -1,8 +1,10 @@
 <div align="center">
-#  NewsNow
+
 
   
   <img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt='News-App'/>
+  
+  # NewsNow
   
 Local and international news in various fields: Follow Egypt news, world news, art news, sports news, economy news, health news and others in one place from more than one source around the world. Breaking news around the clock
 
