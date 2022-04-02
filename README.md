@@ -2,7 +2,7 @@
 
 
   
-  <img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt='News-App'/>
+  <img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt='News App'/>
   
   # NewsNow
   
